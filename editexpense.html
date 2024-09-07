@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Expense - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Edit Expense</h1>
+    </header>
+    <section>
+        <div>
+            // signin.ejs
+            <form action="/update_expense" method="post">
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" value="2024-08-31"><br><br>
+
+                <label for="amount">Amount:</label><br>
+                <input type="number" id="amount" name="amount" step="0.01" value="100.00"><br><br>
+
+                <label for="category">Category:</label><br>
+                <input type="text" id="category" name="category" value="Food"><br><br>
+
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description">Lunch at restaurant</textarea><br><br>
+
+                <input type="submit" value="Update Expense">
+            </form>
+            // signup.ejs
+        </div>
+    </section>
+</body>
+</html>
